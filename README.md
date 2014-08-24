@@ -61,26 +61,8 @@ Following the previous step, the mean and standard deviation features were subse
 
 ```r
 index<-c(grep("[Mm]ean",features),grep("[Ss]td",features))
-```
-
-```
-## Error: object 'features' not found
-```
-
-```r
 feature_table<-feature_table[,index]
-```
-
-```
-## Error: object 'index' not found
-```
-
-```r
 features<-features[index]
-```
-
-```
-## Error: object 'features' not found
 ```
 
 ## Combining activity and subject data
@@ -89,13 +71,7 @@ The activity and the subject data were then converted into factors. The activity
 
 ```r
 names(feature_table)<-gsub("^[0-9]+ ","",features)
-```
 
-```
-## Error: object 'features' not found
-```
-
-```r
 activity<-c(act_train,act_test)
 activity<-as.factor(activity)
 
