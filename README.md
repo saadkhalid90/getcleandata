@@ -45,6 +45,7 @@ The long numeric train and test vectors were converted into matrices of 561 colu
 
 
 ```r
+features<-readLines("features.txt")
 train_fnl <- as.numeric(train_fnl)
 test_fnl <-as.numeric(test_fnl)
 train_matrix<-matrix(train_fnl, nrow=(length(train_fnl)/561),ncol=561, byrow=TRUE)
